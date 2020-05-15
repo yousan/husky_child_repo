@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "post-commit": "set -ex; cd ../; git remote get-url origin"
+    }
+  },
   "author": "Yousan_O (https://2017.l2tp.org)",
   "license": "ISC",
   "devDependencies": {
